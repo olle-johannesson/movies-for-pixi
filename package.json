@@ -1,0 +1,22 @@
+{
+  "name": "movies-for-pixi",
+  "version": "1.0.0",
+  "description": "a list of movies that pixi can watch",
+  "main": "n",
+  "scripts": {
+    "test": "n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "keywords": [
+    "movies",
+    "pixi"
+  ],
+  "author": "Olle Johannesson",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
