@@ -25,7 +25,7 @@ Oh no, artificially made human slaves have made it back into society! Only Harri
 
 A truck driver who turned out to be the ultimate action/effects-movie master. 
 
-### The Terminator 2 (1991)
+### Terminator 2 (1991)
 
 A robot with a styrian accent travels back in time to prevent the attempted murder of whom he attempted to murder in the past so he can be prevented from attempting to murder him in a past future.
 
@@ -79,11 +79,19 @@ The audience runs a gauntlet of SoCal stereotypes where new shit constantly come
 > Yeah, well, you know, that's just, like, uhm, your opinion, man.
 
 
+### No Country for Old Men (2007)
+
+A guy finds a briefcase full of money in the desert, is hunted by a hitman, Tommy Lee Jones doesn't understand.
+
+*This movie is famous for A) a bad haircut B) No soundtrack C) it's really good!
+
+> I don't want to push my chips forward and go out and meet something I don't understand. A man would have to put his soul at hazard. He'd have to say, "O.K., I'll be part of this world."
+
 ### Fargo (1996)
 
-A used-car salesman in his midwestern middleclass midlife crisis tries to be clever, and whoops, ends up in a multiple-murder case.
+A used-car salesman in his midwestern middleclass midlife crisis bites off more than he can chew, and his friendly neighborino detective is right at his heels.
 
-*A comedy with William H. Macy, THAT IS ACTUALLY FUNNY AND GOOD! Incredible, I know, but then it is perhaps the best film of the Coen Brothers. The scene where Peter Stormare uses the wood chipper probably haunts Tarantino every time he picks up a camera.*
+*A comedy with William H. Macy, THAT IS ACTUALLY FUNNY AND GOOD! Incredible, I know, but then it is perhaps the best film of the Coen Brothers. All scenes with Peter Stormare (e.g. when he uses the wood chipper) probably haunts Tarantino every time he picks up a camera.*
 
 > You betcha!
 
