@@ -1,0 +1,59 @@
+:root {
+  --breakpoint-not-small: screen and (min-width: 30em);
+  --breakpoint-medium: screen and (min-width: 30em) and (max-width: 60em);
+  --breakpoint-large: screen and (min-width: 60em);
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+article {
+  scroll-snap-align: start; 
+  scroll-snap-stop: always;
+}
+
+article > a {
+  display: block;
+  height: 100%;
+}
+
+img {
+  pointer-events: none; 
+  object-fit: cover; 
+  z-index: -1;
+}
+
+@media screen and (max-width: 30em) {
+  article {
+    height: 100vh;
+  }
+
+  .article-main {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  article {
+    height: 50vh;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  article {
+    height: 50vh;
+  }
+
+  .article-main {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  .body {
+    max-height: 55%;
+  }
+}
