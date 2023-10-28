@@ -1,0 +1,5 @@
+img {
+  pointer-events: none; 
+  object-fit: cover; 
+  z-index: -1;
+}
