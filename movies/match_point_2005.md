@@ -11,8 +11,6 @@ comment: "This is not the kind of film comedian Allen is known for churning out,
 
 image: "https://media.giphy.com/media/xq9I5pYZsnswuk4Hzq/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
-
 imdb: "https://www.imdb.com/title/tt0416320/"
 
 quotes:

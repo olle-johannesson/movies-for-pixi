@@ -11,8 +11,6 @@ comment: "That's right! No Clockwork Orange, No Lolita, 2001 or Dr. Strangelove!
 
 image: "https://media.giphy.com/media/2poKnJu6wRSaA/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
-
 imdb: "https://www.imdb.com/title/tt0120663/"
 
 quotes:

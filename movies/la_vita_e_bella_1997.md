@@ -11,8 +11,6 @@ comment: ""
 
 image: "https://media.giphy.com/media/wVBncXbsCn9a8/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
-
 imdb: "https://www.imdb.com/title/tt0118799/"
 
 quotes:

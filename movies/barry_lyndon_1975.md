@@ -11,8 +11,6 @@ comment: "Just look at it! Jesus Christ it looks good! The Composition is so per
 
 image: "https://media.giphy.com/media/bOi0cQs3TcHYs/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
-
 imdb: "https://www.imdb.com/title/tt0072684/"
 
 quotes:

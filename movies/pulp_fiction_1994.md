@@ -1,21 +1,20 @@
 ---
-title: "Titanic"
+title: "Pulp Fiction"
 
-year: 1997
+year: 1994
 
-director: "James Cameron"
+director: "Quentin Tarantino"
 
-summary: "A bunch of people go on a cruise. They won't believe what happens next!"
+summary: "A sequence of hard-boiled tough guys who gets sequentially suprised."
 
-comment: "*Not* Aliens*? Not* The Terminator*? Waaaat? Yeah, you probably know that everyone must see those films anyway. But Titanic is special. It is both awesome and crap. The filming is incredible. The dialog is terrible. The effects are amazing. The plot is dumber than my commit messages. The storytelling power is turned up to 11. The characters are flatter than the north atlantic sea on a icy, windless night. This movie reshaped how movies are made and marketed, and has the distinct feel that its thinner-than-paint plot was mysteriously plastered onto another, darker script that wasn't allowed to be made.*"
+comment: "Whenever someone makes a tarantino-list, this–unlike any other of his films–has to be on it"
 
-image: "https://media.giphy.com/media/fnoPLETeUKU8w/giphy.gif"
+image: "https://media.giphy.com/media/TA5UdQTc3NVKg/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
+rottentomates: "https://www.rottentomatoes.com/m/raging_bull"
 
-imdb: "https://www.imdb.com/title/tt0120338/"
+imdb: "https://www.imdb.com/title/tt0110912/"
 
 quotes:
-  - "Teach me to ride like a man."
   
 ---

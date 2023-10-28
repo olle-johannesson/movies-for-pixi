@@ -11,8 +11,6 @@ comment: "*What!? No* Chinatown*? No* The Pianist*? Vampire killers is like mayb
 
 image: "https://media.giphy.com/media/oxZuOySgTJA7S/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
-
 imdb: "https://www.imdb.com/title/tt0061655/"
 
 quotes:

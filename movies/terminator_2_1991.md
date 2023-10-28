@@ -11,8 +11,6 @@ comment: "The heaviest and coolest action movie ever. After you've seen it, refl
 
 image: "https://media.giphy.com/media/3o6ozh46EbuWRYAcSY/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/blade_runner"
-
 imdb: "https://www.imdb.com/title/tt0103064/"
 
 quotes:

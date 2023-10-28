@@ -11,8 +11,6 @@ comment: "This movie is famous for A) a bad haircut B) No soundtrack C) it's rea
 
 image: "https://media.giphy.com/media/Xl6t38RgI4MyA/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/no_country_for_old_men"
-
 imdb: "https://www.imdb.com/title/tt0477348/"
 
 quotes:

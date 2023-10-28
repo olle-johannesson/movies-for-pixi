@@ -1,9 +1,3 @@
-:root {
-  --breakpoint-not-small: screen and (min-width: 30em);
-  --breakpoint-medium: screen and (min-width: 30em) and (max-width: 60em);
-  --breakpoint-large: screen and (min-width: 60em);
-}
-
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -38,7 +32,11 @@ img {
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   article {
-    height: 50vh;
+    height: 100vh;
+  }
+
+  .article-main {
+    height: 75%;
   }
 }
 
@@ -49,11 +47,6 @@ img {
   }
 
   .article-main {
-    flex-basis: 50%;
-    flex-grow: 1;
-  }
-
-  .body {
-    max-height: 55%;
+    height: 70%;
   }
 }

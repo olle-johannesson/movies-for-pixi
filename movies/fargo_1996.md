@@ -11,8 +11,6 @@ comment: "A comedy with William H. Macy, THAT IS ACTUALLY FUNNY AND GOOD! Incred
 
 image: "https://media.giphy.com/media/YC1byC2ADRSi4/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/fargo"
-
 imdb: "https://www.imdb.com/title/tt0116282/"
 
 quotes:

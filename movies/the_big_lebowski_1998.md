@@ -11,8 +11,6 @@ comment: "Too many great quotes in this movie to be counted."
 
 image: "https://media.tenor.com/SnJcsDnGGDQAAAAd/the-big-lebowski-coen-brothers.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
-
 imdb: "https://www.imdb.com/title/tt0118715/"
 
 quotes:

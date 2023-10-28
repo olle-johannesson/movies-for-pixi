@@ -11,8 +11,6 @@ comment: "If you want to be cool like me, you mention this when asked about your
 
 image: "https://media.giphy.com/media/czCid2PTeiyZGXasMm/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
-
 imdb: "https://www.imdb.com/title/tt0108399/"
 
 quotes:

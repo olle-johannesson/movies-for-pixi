@@ -11,8 +11,6 @@ comment: "*Not* Aliens*? Not* The Terminator*? Waaaat? Yeah, you probably know t
 
 image: "https://media.giphy.com/media/fnoPLETeUKU8w/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/titanic"
-
 imdb: "https://www.imdb.com/title/tt0120338/"
 
 quotes:

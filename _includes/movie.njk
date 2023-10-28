@@ -1,18 +1,18 @@
 <article id="{{ movie.data.title }}" >
   <a class="h-100 w-100" href="{{ movie.data.imdb }}" target="blank" style="text-decoration: none;">
-    <div class="h-100 w-100 flex items-end relative">
+    <div class="h-100 w-100 flex flex-column justify-end relative">
     
       <img class="absolute w-100 h-100" src="{{ movie.data.image }}" loading="lazy" />
     
-      <div class="article-main ph5 pt5 pt0-l white">
+      <div class="article-main pa5 pt0-l white">
         <header class="h-45-l">
           <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3">{{ movie.data.title }}</h3>
           <h4 class="f3 fw4 i lh-title mt0">{{ movie.data.director }}  <span>{{ movie.data.year }}</span></h4>
         </header>
       
-        <section class="h-50-ns flex flex-column">
+        <div class="h-50-ns flex flex-column overflow-scroll">
       
-          <div class="h-75-ns flex flex-column flex-wrap-l">
+          <section class="h-75-ns flex flex-column flex-wrap-l">
       
             <p class="lh-copy w-100 w-40-l f5 mt0">
               {{ movie.data.summary }}
@@ -21,7 +21,7 @@
             <p class="lh-copy w-100 w-50-l f5 mt0">
               <i>{{ movie.data.comment }}</i>
             </p>
-          </div>
+          </section>
         
           <ul class="h-25-ns flex flex-wrap" style="list-style: none; padding: 0;">
             {% for quote in movie.data.quotes %}
@@ -29,7 +29,7 @@
             {% endfor %}
           </ul>
 
-        </section>
+        </div>
       </div>
     </div>
   </a>

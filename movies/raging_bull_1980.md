@@ -11,8 +11,6 @@ comment: "Don't see any other boxing movies (even if you want to hear Dolph Lund
 
 image: "https://media.giphy.com/media/QFE8N36eT2Nvq/giphy.gif"
 
-rottentomates: "https://www.rottentomatoes.com/m/raging_bull"
-
 imdb: "https://www.imdb.com/title/tt0081398/"
 
 quotes:
