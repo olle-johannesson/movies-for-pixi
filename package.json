@@ -17,6 +17,7 @@
   "author": "Olle Johannesson",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "lodash": "^4.17.21"
   }
 }
