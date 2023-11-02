@@ -14,5 +14,6 @@ image: "https://media.giphy.com/media/ftY35AGYoizL6TSQae/giphy.gif"
 imdb: "https://www.imdb.com/title/tt0075686/"
 
 quotes:
-  
+  - "The medium enters in as a condition of the artform itself"
+  - "'The universe is expanding /.../ that'll be the end on everything' -'What is that your business? He's stopped doing his homework!' -'What's the point?'"
 ---

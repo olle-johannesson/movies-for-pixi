@@ -14,5 +14,5 @@ image: "https://media.giphy.com/media/bOi0cQs3TcHYs/giphy.gif"
 imdb: "https://www.imdb.com/title/tt0072684/"
 
 quotes:
-  
+  - "Though I cannot say how, I believe you have cheated me!"
 ---

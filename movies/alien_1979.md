@@ -14,4 +14,6 @@ image: "https://media.giphy.com/media/l0MYL2SNbbztrug1y/giphy.gif"
 imdb: "https://www.imdb.com/title/tt0078748/"
 
 quotes:
+  - "'You admire it.' -'I admire its purity'"
+  - "No blood. No Dallas. Nothing."
 ---

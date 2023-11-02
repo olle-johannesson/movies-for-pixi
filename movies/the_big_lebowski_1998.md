@@ -15,5 +15,5 @@ imdb: "https://www.imdb.com/title/tt0118715/"
 
 quotes:
   - "Yeah, well, you know, that's just, like, uhm, your opinion, man."
-  
+  - "Careful, man, there's a beverage here!"
 ---

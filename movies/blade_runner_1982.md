@@ -15,4 +15,6 @@ imdb: "https://www.imdb.com/title/tt0083658/"
 
 quotes:
   - "All these moments will be lost in time like tears in rain."
+  - "You know what a turtle is? Same thing."
+  - "You're not helping! Why is that?"
 ---
