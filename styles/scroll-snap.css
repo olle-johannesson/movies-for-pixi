@@ -4,7 +4,16 @@ main {
   height: 100vh;
 }
 
-main > * {
-  scroll-snap-align: start; 
-  scroll-snap-stop: always;
+@media screen and (max-width: 60em) {
+  main > * {
+    scroll-snap-align: start; 
+    scroll-snap-stop: always;
+  } 
+}
+
+@media screen and (min-width: 60em) {
+  main > header, main > *:nth-child(even) {
+    scroll-snap-align: start; 
+    scroll-snap-stop: always;
+  } 
 }
