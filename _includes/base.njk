@@ -5,31 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
-    <link rel="stylesheet" href="styles/scroll-snap.css">
-    <link rel="stylesheet" href="styles/bkg-img.css">
+    {% block head %}{% endblock %}
 </head>
-<body>
+<body class="sans-serif">
   <main>
-  
-    <header class="vh-100 bg-light-pink sans-serif">
-      <div class="mw9 center pa4 pt5-ns ph7-l">
-        <time class="f6 mb2 dib ttu tracked"><small>November, 2023</small></time>
-        <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
-          <span class="bg-black-90 lh-copy white pa1 tracked-tight">
-            Movies for Pixi
-          </span>
-        </h3>
-    
-        <h4 class="f3 fw1 georgia i">A list of good movies</h4>
-        <h5 class="f6 ttu tracked black-80">By Olle</h5>
-
-        <p class="georgia">Pixi, this is a list of movies I like, semi-complete with the quotes from them I usually force into conversations. Please see these films so you know what I mean when I say things like "Game over man, game over!"</p>
-        <p class="georgia">Now, I have limited myself to 2 movies (-ish) per famous director so it doesn't get too boring to make this list. Please see more movies from each listed director. But start with the ones I've listed, because thats why I listed them.</p>
-      </div>
-    </header>
-
-
-
     {{ content | safe }}
   </main>
 </body>

@@ -1,0 +1,41 @@
+---
+layout: base.njk
+---
+
+{% block head %}
+  <style>
+    p {
+      line-height: 1.5;
+      max-width: 30em;
+    }
+
+    ul {
+      padding: 0;
+    }
+  </style>
+{% endblock %}
+
+<article class="pa3 pa5-ns">
+  <h1 class="f3 f1-m f-headline-l">{{ title }}</h1>
+
+  {{ content | safe }}
+
+  <section class="db cf w-100">
+  <ul>  
+    {% for movie in collections.movies %}
+      {% if movie.data.director == title %}
+      <div class="fl w-100 w-50-m w-25-ns pv2-ns pr3-ns">
+        <div class="aspect-ratio aspect-ratio--1x1">
+          <img style="background-image:url({{ movie.data.image }});" 
+          class="db bg-center cover aspect-ratio--object" />
+        </div>
+        <a href="/#{{movie.data.id}}" class="ph2 ph0-ns pb3 link db">
+          <h3 class="f5 f4-ns mb0 black-90">{{ movie.data.title }}</h3>
+          <h3 class="f6 f5 fw4 mt2 black-60">{{ movie.data.year }}</h3>
+        </a>
+      </div>  
+      {% endif %}
+    {% endfor %}
+  </ul>
+  </section>
+</article>

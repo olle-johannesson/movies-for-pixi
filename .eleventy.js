@@ -2,12 +2,18 @@ const _ = require('lodash');
 const underscoreToDash = str => str.replace(/\_/g, '-')
 const addId = obj => _.set(obj, 'data.id', underscoreToDash(_.get(obj, 'fileSlug')));
 
-module.exports = function(eleventyConfig) {
+module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./styles/*.*")
   
-  eleventyConfig.addCollection("movies", function(collectionApi) {
-    let c = collectionApi.getFilteredByGlob("movies/*.md").map(addId)
-    console.log(c) 
-    return collectionApi.getFilteredByGlob("movies/*.md");
-  });
+  // Collection for movies (index)
+  eleventyConfig.addCollection("movies", collectionApi => 
+    collectionApi
+      .getFilteredByGlob("movies/*.md")
+      .map(addId))
+
+  // Collection for directors
+  eleventyConfig.addCollection("directors", collectionApi => 
+    (console.log(collectionApi
+      .getFilteredByGlob("./directors/*.md")), collectionApi
+      .getFilteredByGlob("./directors/*.md")));
 };
