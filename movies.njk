@@ -1,0 +1,14 @@
+---
+layout: base.njk
+permalink: "/movies/index.html"
+---
+
+<ul id="movie-list" class="list pa3 pa5-ns">
+{% for movie in collections.movies %}
+  <li class="db">
+    <a href="/#{{movie.data.id}}" class="f4 f2-ns b db pb4 link dim color-inherit">
+      {{ movie.data.title }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
