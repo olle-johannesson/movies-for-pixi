@@ -15,5 +15,4 @@ imdb: "https://www.imdb.com/title/tt0120338/"
 
 quotes:
   - "Teach me to spit like a man."
-  
 ---
