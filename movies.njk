@@ -3,6 +3,13 @@ layout: base.njk
 permalink: "/movies/index.html"
 ---
 
+<form id="search" class="pa3 pa5-ns black-80" onsubmit="return false;">
+  <div class="measure">
+    <label for="title" class="f6 b db mb2">Title</label>
+    <input id="title" name="title" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
+  </div>
+</form>
+
 <ul id="movie-list" class="list pa3 pa5-ns">
 {% for movie in collections.movies %}
   <li class="db" data-year="{{movie.data.year}}">
@@ -12,3 +19,5 @@ permalink: "/movies/index.html"
   </li>
 {% endfor %}
 </ul>
+
+<script src="/scripts/movie-search.js"></script>
