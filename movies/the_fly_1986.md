@@ -5,7 +5,7 @@ year: 1986
 
 director: "David Cronenberg"
 
-summary: "A man turns into a fly"
+summary: "A man gradually turns into a fly"
 
 comment: "If someone namedrops the genre 'body-horror', this is one example of it"
 

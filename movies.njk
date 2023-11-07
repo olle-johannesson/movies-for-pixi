@@ -3,12 +3,28 @@ layout: base.njk
 permalink: "/movies/index.html"
 ---
 
+<input type="range" id="age" min="1895" max="2020" step="1" />
+
 <ul id="movie-list" class="list pa3 pa5-ns">
 {% for movie in collections.movies %}
-  <li class="db">
+  <li class="db" data-year="{{movie.data.year}}">
     <a href="/#{{movie.data.id}}" class="f4 f2-ns b db pb4 link dim color-inherit">
       {{ movie.data.title }}
     </a>
   </li>
 {% endfor %}
 </ul>
+
+<script>
+  let input = document.querySelector('#age')
+  let thisYear = (new Date()).getFullYear()
+
+  let items = document.querySelectorAll('li')
+  input.max = thisYear
+  input.value = thisYear
+
+  input.addEventListener('input', (e) => [...document.querySelectorAll('li')].forEach(li => {
+    console.log('bar')
+    li.style.display = li.dataset.year > e.target.value ? 'none' : null
+  }))
+</script>

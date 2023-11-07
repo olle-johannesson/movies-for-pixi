@@ -7,7 +7,7 @@ layout: base.njk
     <link rel="stylesheet" href="styles/bkg-img.css">
 {% endblock %}
 
-<header class="vh-100 bg-light-pink">
+<header id="title" class="vh-100 bg-light-pink white">
   <div class="mw9 center pa4 pt5-ns ph7-l">
     <time class="f6 mb2 dib ttu tracked"><small>November, 2023</small></time>
     <h3 class="f2 f1-m f-headline-l measure-narrow white lh-title mv0">
@@ -23,12 +23,16 @@ layout: base.njk
     <p class="measure-wide georgia">Now, I have limited myself to 2 movies (-ish) per famous director so it doesn't get too boring to make this list. Please see more movies from each listed director. But start with the ones I've listed, because thats why I listed them.</p>
 
     <nav class="f6 fw6 ttu tracked pt6">
-      <a class="link dim black dib mr3" href="/directors" title="Directors">Directors</a>
+      <a class="link dim white dib mr3" href="/directors" title="Directors">Directors</a>
+      <a class="link dim white dib mr3" href="/movies" title="Directors">All Movies</a>
     </nav>
     
   </div>
 </header>
 
+<script>
+  document.querySelector('#title').style.backgroundColor = '#'+Math.random().toString(16).slice(-6)
+</script>
 
 {% for movie in collections.movies %}
   {% include "movie.njk" %}
