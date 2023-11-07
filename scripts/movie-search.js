@@ -1,6 +1,29 @@
+const DATA_KEY = 'movieFilter'
+
 const filterFunctions = {
   title: byTitle,
   year: byReleaseYear
+}
+
+function debounce(fn, timeout = 300){
+  let timer
+  return (...args) => {
+    clearTimeout(timer)
+    timer = setTimeout(() => fn(...args), timeout);
+  };
+}
+
+async function saveToSessionStorage(data) {
+  window.sessionStorage.setItem(DATA_KEY, JSON.stringify(data))
+}
+
+function saveFormData() {
+  saveToSessionStorage(Object.fromEntries(getFormDataEntries()))
+}
+
+function getSessionStorageData() {
+  const data = window.sessionStorage.getItem(DATA_KEY)
+  return JSON.parse(data)
 }
 
 function byTitle(partialTitle) {
@@ -60,5 +83,19 @@ function filterMovies() {
   getAllMovies().forEach(showElementIf(allFiltersApply))
 }
 
+function restoreSession() {
+  const form = getSearchForm()
+  const storedData = getSessionStorageData()
+  if (!storedData) return
+  
+  Object.entries(getSessionStorageData()).forEach(([key, value]) => {
+    form.elements[key].value = value
+  })
+  filterMovies()
+}
+
 initYearSlider()
+restoreSession()
+
 getSearchForm().addEventListener('input', filterMovies)
+getSearchForm().addEventListener('input', debounce(saveFormData))
