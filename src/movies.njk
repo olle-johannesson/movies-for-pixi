@@ -4,21 +4,21 @@ permalink: "/movies/index.html"
 ---
 
 <form id="search" class="pa3 pa5-ns black-80" onsubmit="return false;">
-  <div class="measure pb2">
+  <div class="primary measure pb2">
     <label for="title" class="f6 b db mb2">Title</label>
-    <input id="title" name="title" type="text" class="input-reset ba b--black-20 pa2 mb2 db w-100" aria-describedby="title-desc">
-    <small id="title-desc" class="f6 black-60 db mb2">Filter by title</small>
+    <input id="title" name="title" type="text" class="input-reset ba b-black-20 pa2 mb2 db w-100" aria-describedby="title-desc">
+    <small id="title-desc" class="secondary f6 db mb2">Filter by title</small>
   </div>
   
   <details class="measure pv2">
-    <summary class="measure mv2 tr">More filters</summary>
-    <label for="year" class="f6 b db mb2">Earliest release year <span id="year-value" class="normal black-60"></span></label>
+    <summary class="primary measure mv2 tr">More filters</summary>
+    <label for="year" class="primary f6 b db mb2">Earliest release year <span id="year-value" class="secondary normal"></span></label>
     <input id="year" name="year" type="range" step="1" min="1895" class="br-pill input-reset p0 bg-light-gray mb2 db w-100 h1 dim" aria-describedby="year-desc">
     <div class="flex flex-row justify-between w-100 pb2">
-      <span>Invention of cinema</span>
-      <span>today</span>
+      <span class="primary">Invention of cinema</span>
+      <span class="primary">today</span>
     </div>
-    <small id="year-desc" class="f6 black-60 db mb2">Filter by earliest release year</small>
+    <small id="year-desc" class="f6 db mb2 secondary">Filter by earliest release year</small>
   </details>
 </form>
 
