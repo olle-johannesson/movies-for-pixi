@@ -3,17 +3,23 @@ const underscoreToDash = str => str.replace(/\_/g, '-')
 const addId = obj => _.set(obj, 'data.id', underscoreToDash(_.get(obj, 'fileSlug')));
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addPassthroughCopy("./styles/*.*")
-  eleventyConfig.addPassthroughCopy("./scripts/*.*")
-  // eleventyConfig.addPassthroughCopy("./images/*.*")
+  eleventyConfig.addPassthroughCopy("./src/styles/*.*")
+  eleventyConfig.addPassthroughCopy("./src/scripts/*.*")
+  // eleventyConfig.addPassthroughCopy("./src/images/*.*")
   
   eleventyConfig.addCollection("movies", collectionApi => 
     collectionApi
-      .getFilteredByGlob("movies/*.md")
+      .getFilteredByGlob("./src/movies/*.md")
       .map(addId))
 
-  // Collection for directors
   eleventyConfig.addCollection("directors", collectionApi => 
     collectionApi
-      .getFilteredByGlob("./directors/*.md"));
+      .getFilteredByGlob("./src/directors/*.md"));
+
+  return {
+    dir: {
+      input: "src",
+      output: "_site"
+    }
+  };
 };
