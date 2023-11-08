@@ -31,9 +31,12 @@ jobs:
 
     - name: Build Eleventy
       run: npx @11ty/eleventy
+    
+    - name: Clear parcel Cache
+      run: npx parcel cache clean
 
     - name: Build with Parcel
-      run: npx parcel build _site/**/*.html --no-source-maps
+      run: npx parcel build _site/**/*.html --no-source-maps --log-level verbose
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
