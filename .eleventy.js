@@ -7,20 +7,10 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./scripts/*.*")
   // eleventyConfig.addPassthroughCopy("./images/*.*")
   
-  // Collection for movies (index)
   eleventyConfig.addCollection("movies", collectionApi => 
     collectionApi
       .getFilteredByGlob("movies/*.md")
       .map(addId))
-
-  eleventyConfig.addCollection("moviesByDecade", collectionApi => {
-    const allMovies = collectionApi
-      .getFilteredByGlob("movies/*.md")
-      .map(addId)
-      .map(n => n.data)
-    
-    return Object.entries(_.groupBy(allMovies, (item) => Math.floor(item.year / 10) * 10)).map(([decade, movies]) => ({ decade, movies }));
-  });
 
   // Collection for directors
   eleventyConfig.addCollection("directors", collectionApi => 
