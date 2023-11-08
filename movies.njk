@@ -9,10 +9,11 @@ permalink: "/movies/index.html"
     <input id="title" name="title" type="text" class="input-reset ba b--black-20 pa2 mb2 db w-100" aria-describedby="title-desc">
     <small id="title-desc" class="f6 black-60 db mb2">Filter by title</small>
   </div>
+  
   <details class="measure pv2">
-  <summary class="measure mv2 tr">More filters</summary>
+    <summary class="measure mv2 tr">More filters</summary>
     <label for="year" class="f6 b db mb2">Earliest release year <span id="year-value" class="normal black-60"></span></label>
-    <input id="year" name="year" type="range" step="1" min="1895" class="input-reset p0 bg-light-gray mb2 db w-100 h1 dim" aria-describedby="year-desc">
+    <input id="year" name="year" type="range" step="1" min="1895" class="br-pill input-reset p0 bg-light-gray mb2 db w-100 h1 dim" aria-describedby="year-desc">
     <div class="flex flex-row justify-between w-100 pb2">
       <span>Invention of cinema</span>
       <span>today</span>
@@ -24,7 +25,7 @@ permalink: "/movies/index.html"
 <ul id="movie-list" class="list pa3 pa5-ns">
 {% for movie in collections.movies %}
   <li class="db" data-year="{{movie.data.year}}">
-    <a href="/#{{movie.data.id}}" class="f4 f2-ns b db pb4 link dim color-inherit">
+    <a href="/#{{movie.data.id}}" class="f4 f2-ns b db pa2 link dim color-inherit">
       {{ movie.data.title }}
     </a>
   </li>

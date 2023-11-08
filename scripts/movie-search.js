@@ -5,7 +5,7 @@ const filterFunctions = {
   year: byReleaseYear
 }
 
-function debounce(fn, timeout = 300){
+function debounce(fn, timeout = 300) {
   let timer
   return (...args) => {
     clearTimeout(timer)
@@ -83,14 +83,16 @@ function filterMovies() {
   getAllMovies().forEach(showElementIf(allFiltersApply))
 }
 
+function setFromEntry(obj) {
+  return ([key, value]) => obj[key] = value
+}
+
 function restoreSession() {
   const form = getSearchForm()
   const storedData = getSessionStorageData()
   if (!storedData) return
   
-  Object.entries(getSessionStorageData()).forEach(([key, value]) => {
-    form.elements[key].value = value
-  })
+  Object.entries(getSessionStorageData()).forEach(([key, value]) => form.elements[key].value = value)
   filterMovies()
 }
 

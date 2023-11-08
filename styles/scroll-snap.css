@@ -8,6 +8,7 @@ main {
   main > * {
     scroll-snap-align: start; 
     scroll-snap-stop: always;
+    overflow-y: scroll;
   } 
 }
 
@@ -15,5 +16,6 @@ main {
   main > header, main > *:nth-child(even) {
     scroll-snap-align: start; 
     scroll-snap-stop: always;
+    overflow-y: scroll;
   } 
 }
