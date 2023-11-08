@@ -7,7 +7,7 @@ permalink: "/directors/index.html"
 
 <ul class="list pa3 pa5-ns">
 {% for director in collections.directors %}
-  <li class="dib mr2"><a href="{{director.fileSlug}}" class="f4 f2-ns b db pa2 link dim color-inherit">{{ director.data.title }}</a></li>
+  <li class="dib mr2"><a href="/directors/{{director.fileSlug}}" class="f4 f2-ns b db pa2 link dim color-inherit">{{ director.data.title }}</a></li>
 {% endfor %}
 </ul>
 

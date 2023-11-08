@@ -2,9 +2,10 @@
   "name": "movies-for-pixi",
   "version": "1.0.0",
   "description": "a list of movies that pixi can watch",
-  "main": "n",
   "scripts": {
-    "test": "n"
+    "start": "eleventy --serve",
+    "build": "rm -rf dist && rm -rf _site && eleventy",
+    "bundle": "parcel build _site/**/*.html --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@mischnic/parcel-resolver-root": "^0.4.2",
+    "parcel": "^2.10.2"
   }
 }
