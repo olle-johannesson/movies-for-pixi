@@ -33,7 +33,7 @@ jobs:
       run: npx @11ty/eleventy
 
     - name: Build with Parcel
-      run: npx parcel build _site/**/*.html --no-source-maps --log-level verbose
+      run: npx parcel build _site/index.html _site/**/index.html _site/directors/**/index.html --public-url /movies-for-pixi --no-source-maps --log-level verbose
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
