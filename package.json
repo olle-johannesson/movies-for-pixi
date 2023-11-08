@@ -4,7 +4,8 @@
   "description": "a list of movies that pixi can watch",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "rm -rf dist && rm -rf _site && eleventy",
+    "clean": "rimraf .parcel-cache dist _site",
+    "build": "npm run clean && eleventy",
     "bundle": "parcel build _site/index.html _site/**/index.html _site/directors/**/index.html --no-source-maps"
   },
   "keywords": [
@@ -15,8 +16,9 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@mischnic/parcel-resolver-root": "^0.4.2",
     "lodash": "^4.17.21",
     "parcel": "^2.10.2",
-    "@mischnic/parcel-resolver-root": "^0.4.2"
+    "rimraf": "^5.0.5"
   }
 }
