@@ -2,11 +2,13 @@
   "name": "movies-for-pixi",
   "version": "1.0.0",
   "description": "a list of movies that pixi can watch",
+  "homepage": "https://moviespixishouldwatch.com/",
   "scripts": {
     "start": "eleventy --serve",
     "clean": "rimraf .parcel-cache dist _site",
     "build": "npm run clean && eleventy",
-    "bundle": "parcel build _site/index.html _site/**/index.html _site/directors/**/index.html --no-source-maps"
+    "copyStatics": "mkdir -p _site/public/head && cp -r src/head _site/public/head",
+    "bundle": "parcel build _site/index.html _site/**/index.html _site/**/**/index.html --no-cache --no-source-maps"
   },
   "keywords": [
     "movies",
@@ -17,8 +19,13 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@mischnic/parcel-resolver-root": "^0.4.2",
+    "@parcel/packager-raw-url": "^2.10.2",
+    "@parcel/transformer-webmanifest": "^2.10.2",
     "lodash": "^4.17.21",
     "parcel": "^2.10.2",
     "rimraf": "^5.0.5"
+  },
+  "@mischnic/parcel-resolver-root": {
+    "/": "./_site"
   }
 }

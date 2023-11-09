@@ -5,7 +5,7 @@ const addId = obj => _.set(obj, 'data.id', underscoreToDash(_.get(obj, 'fileSlug
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/styles/*.*")
   eleventyConfig.addPassthroughCopy("./src/scripts/*.*")
-  // eleventyConfig.addPassthroughCopy("./src/images/*.*")
+  eleventyConfig.addPassthroughCopy("./src/head/*.*")
   
   eleventyConfig.addCollection("movies", collectionApi => 
     collectionApi
