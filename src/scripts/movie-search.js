@@ -50,13 +50,16 @@ function getYearSlider() {
   return document.getElementById('year')
 }
 
+function updateYearInSliderLabel(year) {
+  document.getElementById('year-value').textContent = year
+}
+
 function initYearSlider() {
   const slider = getYearSlider()
   slider.max = (new Date()).getFullYear()
   slider.value = slider.min
-  const updateValue = value => document.getElementById('year-value').textContent = value
-  updateValue(slider.min)
-  slider.addEventListener('input', e => updateValue(e.target.value))
+  updateYearInSliderLabel(slider.min)
+  slider.addEventListener('input', e => updateYearInSliderLabel(e.target.value))
 }
 
 function getFormDataEntries() {
@@ -93,6 +96,7 @@ function restoreSession() {
   if (!storedData) return
   
   Object.entries(getSessionStorageData()).forEach(([key, value]) => form.elements[key].value = value)
+  updateYearInSliderLabel(getYearSlider().value)
   filterMovies()
 }
 
