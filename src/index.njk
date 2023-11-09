@@ -45,7 +45,8 @@ layout: base.njk
 
 
 <script>
-  document.querySelector('#title').style.backgroundColor = '#'+Math.random().toString(16).slice(-6)
+  const a11y_conform_bg = ['#E7040F', #FF4136, '#D5008F', '#137752', '#001B44', '#00449E', '#357EDD', '#333333', '#19A974', '#357EDD']
+  document.querySelector('#title').style.backgroundColor = a11y_conform_bg[Math.floor(Math.random() * a11y_conform_bg.length)]
 </script>
 
 {% for movie in collections.movies %}
