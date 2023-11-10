@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function addThis(name, obs) {
     const r = new RegExp(`^\/a-${name}\..*\.html`)
     const i = allArticles.findIndex(article => r.test(article))
-    console.log(i, name, allArticles[i], allArticles)
     if (i < 0) {
       return Promise.reject("not a good movie that I've heard of...")
     }
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Error adding article:', error)
     } 
     
-    if (articles[0] && container.childElementCount < allArticles.length) {
+    if (articles[0] && allArticles.length) {
       obs.observe(articles[0])
     }
 
@@ -69,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function onIntersection(entries, obs) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        addNextN(observer)
-        .then(() => obs.unobserve(entry.target))
+        obs.unobserve(entry.target)
+        addNextN(obs)
       }
     }) 
   }
