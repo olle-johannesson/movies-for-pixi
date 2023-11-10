@@ -1,3 +1,7 @@
+#home-button {
+  display: none;
+}
+
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -5,15 +9,15 @@ main {
 }
 
 @media screen and (max-width: 60em) {
-  main > * {
+  #title, #movies article {
     scroll-snap-align: start; 
     scroll-snap-stop: always;
     overflow-y: scroll;
-  } 
+  }
 }
 
 @media screen and (min-width: 60em) {
-  main > header, main > *:nth-child(even) {
+  #title, #movies article:nth-child(odd) {
     scroll-snap-align: start; 
     scroll-snap-stop: always;
     overflow-y: scroll;

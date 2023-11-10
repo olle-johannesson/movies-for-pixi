@@ -1,4 +1,11 @@
-
+---
+pagination:
+  data: collections.movies
+  size: 1
+  alias: movie
+  addAllPagesToCollections: true
+permalink: "movies/article-{{ pagination.pageNumber }}.html"
+---
 
 <article class="vh-100 vh-50-l" id="{{ movie.data.id }}">
   <a class="db h-100 w-100" href="{{ movie.data.imdb }}" target="blank" style="text-decoration: none;">

@@ -75,6 +75,10 @@ function andExpr(predicates) {
   return x => predicates.every(predicate => predicate(x))
 }
 
+function setFromEntry(obj) {
+  return ([key, value]) => obj[key] = value
+}
+
 function showElementIf(predicate) {
   return (element) => element.style.display = predicate(element) ? null : 'none'
 }
@@ -86,9 +90,6 @@ function filterMovies() {
   getAllMovies().forEach(showElementIf(allFiltersApply))
 }
 
-function setFromEntry(obj) {
-  return ([key, value]) => obj[key] = value
-}
 
 function restoreSession() {
   const form = getSearchForm()
