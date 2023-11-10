@@ -5,7 +5,7 @@ year: 1991
 
 director: "Jonathan Demme"
 
-summary: "When F.B.I. have trouble catching a serial murderer, they need the help of a jailed serial murdering psychologist. They send a young cadet to interview him."
+summary: "When F.B.I. can't catch a serial murdering psychopath, they need the help of a serial murdering psychologist. Young cadet Clarice is sent to ask for his analysis."
 
 comment: "Anthony Hopkins gives a career-defining performance"
 
@@ -14,6 +14,5 @@ image: "https://media.giphy.com/media/VvTG9RrCeGrza/giphy.gif"
 imdb: "https://www.imdb.com/title/tt0102926/"
 
 quotes:
-  - "I ate his liver with some fava beans and a nice chianti."
-  - "Quid pro quo."
+  - "Quid pro quo, Clarice"
 ---
