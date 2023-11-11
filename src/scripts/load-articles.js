@@ -2,7 +2,7 @@ import articleManifest from '../movies/a-*.html'
 
 document.addEventListener('DOMContentLoaded', () => {
   const PREFETCH_N = 6
-  const allArticles = Object.values(articleManifest).map(source => source.slice(source.lastIndexOf('/')))
+  const allArticles = Object.values(articleManifest).map(source => source.slice(source.lastIndexOf('/'))).sort(() => Math.random() - 0.5)
   const articlesContainer = document.getElementById('movies') 
   const observer = new IntersectionObserver(onIntersection, {
     rootMargin: '0%',

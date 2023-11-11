@@ -8,13 +8,13 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/head/*.*")
   
   eleventyConfig.addCollection("movies", collectionApi => 
-    collectionApi
+    _.shuffle(collectionApi
       .getFilteredByGlob("./src/movies/*.md")
-      .map(addId))
+      .map(addId)))
 
   eleventyConfig.addCollection("directors", collectionApi => 
-    collectionApi
-      .getFilteredByGlob("./src/directors/*.md"));
+    _.shuffle(collectionApi
+      .getFilteredByGlob("./src/directors/*.md")));
 
   return {
     dir: {
