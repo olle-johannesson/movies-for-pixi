@@ -29,11 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function addThis(name, obs) {
     const r = new RegExp(`^\/a-${name}\..*\.html`)
     const i = allArticles.findIndex(article => r.test(article))
-    if (i < 0) {
-      return Promise.reject("not a good movie that I've heard of...")
-    }
     
-    return Promise
+    return i >= 0 && Promise
       .all(allArticles.splice(i, 1).map(fetchElement))
       .then(articles => addArticles(articles, articlesContainer, obs))
       .then(articles => articles[0].scrollIntoView('smooth'))
