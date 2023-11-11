@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   addNextN(observer).then(() => {
     if (window.location.hash) {
       const articleToScrollTo = document.querySelector(window.location.hash);
-      if (articleToScrollTo) {
+      if (window.location.hash === '#title') {
+        return
+      } else if (articleToScrollTo) {
         articleToScrollTo.scrollIntoView();
       } else {
         addThis(window.location.hash.slice(1), observer)
