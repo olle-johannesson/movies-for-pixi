@@ -1,12 +1,12 @@
 import articleManifest from '../movies/a-*.html'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const PREFETCH_N = 4
+  const PREFETCH_N = 6
   const allArticles = Object.values(articleManifest).map(source => source.slice(source.lastIndexOf('/')))
   const articlesContainer = document.getElementById('movies') 
   const observer = new IntersectionObserver(onIntersection, {
     rootMargin: '0%',
-    threshold: 1.0,
+    threshold: 0.1,
   })
 
   addNextN(observer).then(() => {
