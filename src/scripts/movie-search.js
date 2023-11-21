@@ -95,9 +95,18 @@ function restoreSession() {
   const form = getSearchForm()
   const storedData = getSessionStorageData()
   if (!storedData) return
+
+  const hasDetailedFilter = Object.keys(storedData).filter(k => k !== 'title').length > 0
+  const yearMoreThanMin = Boolean(storedData?.year > getYearSlider().min)
+  const hasMoreFiltersThanYear = yearMoreThanMin && hasDetailedFilter
+
+  Object.entries(storedData)
+    .filter(([key]) => key in form.elements)
+    .forEach(([key, value]) => form.elements[key].value = value)  
   
-  Object.entries(getSessionStorageData()).forEach(([key, value]) => form.elements[key].value = value)
   updateYearInSliderLabel(getYearSlider().value)
+  document.getElementById('more-filters').open = hasDetailedFilter && hasMoreFiltersThanYear
+
   filterMovies()
 }
 

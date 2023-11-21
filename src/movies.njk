@@ -6,13 +6,15 @@ eleventyExcludeFromCollections: true
 ---
 
 <form id="search" class="pa3 pa5-ns black-80" onsubmit="return false;">
+  <noscript><p><small class="f6 db mb2 red">JavaScript is required to use this form.</small></p></noscript>
+
   <div class="primary measure pb2">
     <label for="title" class="f6 b db mb2">Title</label>
     <input id="title" name="title" type="text" class="input-reset ba b-black-20 pa2 mb2 db w-100" aria-describedby="title-desc">
     <small id="title-desc" class="secondary f6 db mb2">Filter by title</small>
   </div>
   
-  <details class="measure pv2">
+  <details id="more-filters" class="measure pv2">
     <summary class="primary measure mv2 tr">More filters</summary>
     <label for="year" class="primary f6 b db mb2">Released after <span id="year-value" class="secondary normal"></span></label>
     <input id="year" name="year" type="range" step="1" min="1895" class="br-pill input-reset p0 bg-light-gray mb2 db w-100 h1 dim" aria-describedby="year-desc">
@@ -23,6 +25,7 @@ eleventyExcludeFromCollections: true
     <small id="year-desc" class="f6 db mb2 secondary">Filter by release year</small>
   </details>
 </form>
+
 
 <ul id="movie-list" class="list pa3 pa5-ns">
 {% for movie in collections.movies %}
