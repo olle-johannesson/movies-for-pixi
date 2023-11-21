@@ -8,8 +8,8 @@
     "clean": "rimraf .parcel-cache dist _site",
     "build": "npm run clean && eleventy",
     "copyStatics": "mkdir -p _site/public/head && cp -r src/head _site/public/head",
-    "bundle": "parcel build _site/index.html _site/**/index.html _site/**/**/index.html --no-cache --no-source-maps",
-    "makeArticleManifest": "parcel build _site/scripts/article-manifest-maker.js --no-cache --no-source-maps"
+    "bundle": "parcel build _site/index.html _site/**/index.html _site/**/**/index.html --no-cache --no-source-maps && npm run sitemap",
+    "sitemap": "node ./makeSitemap.js"
   },
   "keywords": [
     "movies",
