@@ -1,5 +1,5 @@
 module.exports = {
 	eleventyComputed: {
-    permalink: () => false
+    layout: "movie.njk"
   }
 }

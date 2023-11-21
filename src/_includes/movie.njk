@@ -1,37 +1,23 @@
+---
+layout: base.njk
+title: {{ title }}
+---
 
 
-<article class="vh-100 vh-50-l" id="{{ movie.data.id }}">
-  <a class="db h-100 w-100" href="{{ movie.data.imdb }}" target="blank" style="text-decoration: none;">
-    <div class="h-100 w-100 flex flex-column justify-end relative">
-    
-      <img class="absolute w-100 h-100 bg-black" src="{{ movie.data.image }}" loading="lazy" alt="{{ movie.data.title }}" />
-    
-      <div class="h-100 w-100 h-75-m h-50-l pa4 pt0-l flex flex-column white ws-normal" style="overflow-wrap: break-word;">
-        <header class="h-45-l" style="flex-shrink: 0;">
-          <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3">{{ movie.data.title }}</h3>
-          <h4 class="f3 fw4 i lh-title mt0">{{ movie.data.director }}  <span>{{ movie.data.year }}</span></h4>
-        </header>
-      
-        <div class="h-75 h-50-l pb2 flex flex-column overflow-scroll georgia">
-      
-          <section class="h-75-ns flex flex-column flex-wrap-l">
-      
-            <p class="lh-copy w-100 w-40-l f5 mt0">
-              {{ movie.data.summary }}
-            </p>
-      
-            <p class="lh-copy w-100 w-50-l f5 mt0">
-              <i>{{ movie.data.comment }}</i>
-            </p>
-          </section>
-        
-          <ul class="h-25-ns flex flex-wrap" style="list-style: none; padding: 0;">
-            {% for quote in movie.data.quotes %}
-              <li><blockquote class="lh-copy f5 mt0"><i style="font-weight: lighter;">"{{ quote }}"</i></blockquote></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+<article class="pa3 pa5-ns">
+  <header>
+    <h1 class="f3 f1-m f-headline-l">{{ title }}</h1>
+    <h2 class="f5 f2-ns">{{ director }} ({{ year }})</h1>
+  </header>
+
+  <section class="mv4-ns">
+    <p class="measure">{{ summary }}</p>
+    <p class="measure">{{ comment }}</p>
+  </section>
+
+  <section class="db w-100 mt4-ns">
+    <div class="w-100 w-50-ns pv2-ns pr3-ns">      
+        <img src="{{ image }}" class="db bg-center cover" />
     </div>
-  </a>
+  </section>
 </article>

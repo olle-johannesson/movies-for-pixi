@@ -2,6 +2,7 @@
 layout: base.njk
 title: All movies
 permalink: "/movies/index.html"
+eleventyExcludeFromCollections: true
 ---
 
 <form id="search" class="pa3 pa5-ns black-80" onsubmit="return false;">
@@ -26,7 +27,7 @@ permalink: "/movies/index.html"
 <ul id="movie-list" class="list pa3 pa5-ns">
 {% for movie in collections.movies %}
   <li class="db" data-year="{{movie.data.year}}">
-    <a href="/#{{movie.data.id}}" class="f4 f2-ns b db pa2 link dim color-inherit">
+    <a href="{{movie.fileSlug}}" class="f4 f2-ns b db pa2 link dim color-inherit" data-jse="/#{{movie.data.id}}">
       {{ movie.data.title }}
     </a>
   </li>
