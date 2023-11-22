@@ -3,7 +3,7 @@ const path = require('path');
 const { homepage: BASE_URL } = require('./package.json')
 
 const DIST_DIR = path.join(__dirname, '/dist');
-const SITEMAP_PATH = path.join(DIST_DIR, 'sitemap_js.xml')
+const SITEMAP_PATH = path.join(DIST_DIR, 'sitemap.xml')
 
 function walkDir(currentPath, urls = []) {
   const files = fs.readdirSync(currentPath);
