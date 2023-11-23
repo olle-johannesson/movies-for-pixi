@@ -117,5 +117,6 @@ function resetLinks() {
 initYearSlider()
 restoreSession()
 resetLinks()
+getSearchForm().onsubmit = () => false
 getSearchForm().addEventListener('input', filterMovies)
 getSearchForm().addEventListener('input', debounce(saveFormData))

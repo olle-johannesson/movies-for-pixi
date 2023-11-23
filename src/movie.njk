@@ -8,13 +8,13 @@ permalink: "movies/a-{{ movie.data.id }}.html"
 --- 
 
 <article class="vh-100 vh-50-l" id="{{ movie.data.id }}">
-  <a class="db h-100 w-100" href="{{ movie.data.imdb }}" target="blank" style="text-decoration: none;">
+  <a class="db h-100 w-100 no-underline" href="{{ movie.data.imdb }}" target="blank" rel="noopener noreferrer">
     <div class="h-100 w-100 flex flex-column justify-end relative">
     
       <img class="absolute w-100 h-100 bg-black" src="{{ movie.data.image }}" loading="lazy" alt="{{ movie.data.title }}" />
     
-      <div class="h-100 w-100 h-75-m h-50-l pa4 pt0-l flex flex-column white ws-normal" style="overflow-wrap: break-word;">
-        <header class="h-45-l" style="flex-shrink: 0;">
+      <div class="h-100 w-100 h-75-m h-50-l pa4 pt0-l flex flex-column white ws-normal overflow-wrap-break-word">
+        <header class="h-45-l flex-shrink-0">
           <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3">{{ movie.data.title }}</h3>
           <h4 class="f3 fw4 i lh-title mt0">
           {% if movie.data.director is string %}
@@ -38,9 +38,9 @@ permalink: "movies/a-{{ movie.data.id }}.html"
             </p>
           </section>
         
-          <ul class="h-25-ns flex flex-wrap" style="list-style: none; padding: 0;">
+          <ul class="h-25-ns flex flex-wrap list pa0">
             {% for quote in movie.data.quotes %}
-              <li><blockquote class="lh-copy f5 mt0"><i style="font-weight: lighter;">"{{ quote }}"</i></blockquote></li>
+              <li><blockquote class="lh-copy f5 mt0"><i class="fw2">"{{ quote }}"</i></blockquote></li>
             {% endfor %}
           </ul>
         </div>
