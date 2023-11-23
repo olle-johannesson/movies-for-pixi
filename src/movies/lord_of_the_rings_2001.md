@@ -5,7 +5,7 @@ year: 2001
 
 director: "Peter Jackson"
 
-summary: "A guy takes a ring to a mountain"
+summary: "Totally not about the siege of Vienna"
 
 comment: "This is what he did after 'Meet the Feebles' and 'Braindead'. Just so you know."
 

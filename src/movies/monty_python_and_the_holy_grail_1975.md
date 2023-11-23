@@ -3,7 +3,9 @@ title: "Monty Python and the Holy Grail"
 
 year: 1975
 
-director: "Terry Gilliam"
+director: 
+  - "Terry Gilliam"
+  - "Terry Jones"
 
 summary: "King Arthur and his knights are on a mission from god"
 

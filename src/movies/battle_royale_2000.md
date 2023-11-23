@@ -14,5 +14,7 @@ image: "https://media.giphy.com/media/ZjTDt3tzaen0k/giphy.gif"
 imdb: "https://www.imdb.com/title/tt0266308/"
 
 quotes:
+  - "Well, my father was a doctor."
+  - "My father was a chef."
   - "Hey, my father was a fisherman."
 ---

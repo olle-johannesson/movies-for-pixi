@@ -17,7 +17,7 @@ layout: base.njk
   <section class="db cf w-100">
   <ul>  
     {% for movie in collections.movies %}
-      {% if movie.data.director == title %}
+      {% if (movie.data.director is string and movie.data.director == title) or (movie.data.director is iterable and title in movie.data.director) %}
       <div class="fl w-100 w-50-m w-25-ns pv2-ns pr3-ns">
         <div class="aspect-ratio aspect-ratio--1x1">
           <img style="background-image:url({{ movie.data.image }});" 
