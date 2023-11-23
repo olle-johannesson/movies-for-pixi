@@ -1,7 +1,6 @@
 const CACHE_NAME = 'pixi-movies_v1'
-const coreAssets = [
-  ''
-]
+const coreAssets = ['']
+const whitelistSchemes = ['http', 'https'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -20,25 +19,34 @@ self.addEventListener('install', (event) => {
  * just cache everything else.
  */
 self.addEventListener('fetch', (event) => {
-  const isHTMLRequest = event.request.mode === 'navigate' || event.request.headers.get('accept').includes('text/html')
+  const request = event.request
+  const requestUrl = new URL(request.url);
+  const isHTMLRequest = request.mode === 'navigate' || request.headers.get('accept').includes('text/html')
+  const isChromeExtensionRequest = requestUrl.protocol === 'chrome-extension:'
+  const isRelevantScheme = whitelistSchemes.includes(requestUrl.protocol.replace(':', ''))
+  
+  if (isChromeExtensionRequest || !isRelevantScheme) {
+    return;
+  }
+
   if (isHTMLRequest) { 
     // online first
-    event.respondWith(fetch(event.request)
+    event.respondWith(fetch(request)
       .then(networkResponse => caches
         .open(CACHE_NAME)
         .then(cache => networkResponse.ok 
-            ? (cache.put(event.request, networkResponse.clone()), networkResponse)
+            ? (cache.put(request, networkResponse.clone()), networkResponse)
             : Promise.reject('failed to load resource')  
         )
       )
-      .catch(() => caches.match(event.request))
+      .catch(() => caches.match(request))
     );
   } else { 
     // offline first
-    event.respondWith(caches.match(event.request)
-        .then(cachedResponse => cachedResponse || fetch(event.request)
+    event.respondWith(caches.match(request)
+        .then(cachedResponse => cachedResponse || fetch(request)
           .then(response => caches.open(CACHE_NAME)
-            .then(cache => cache.put(event.request, response.clone()))
+            .then(cache => cache.put(request, response.clone()))
             .then(() => response))))
     }
 })
