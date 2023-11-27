@@ -7,6 +7,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/scripts/*.*")
   eleventyConfig.addPassthroughCopy("./src/head/*.*")
   eleventyConfig.addPassthroughCopy("./src/service-worker.js")
+  eleventyConfig.addPassthroughCopy("./src/register-service-worker.js")
   
   eleventyConfig.addCollection("movies", collectionApi => 
     _.shuffle(collectionApi
