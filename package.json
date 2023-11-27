@@ -7,7 +7,7 @@
     "start": "eleventy --serve",
     "clean": "rimraf .parcel-cache dist _site",
     "build": "npm run clean && eleventy",
-    "bundle": "parcel build _site/index.html _site/**/index.html _site/**/**/index.html --no-cache --no-source-maps && npm run add:sitemap && npm run add:redirects",
+    "bundle": "parcel build _site/index.html _site/**/index.html _site/**/**/index.html _site/scripts/service-worker.js --no-cache --no-source-maps && npm run add:sitemap && npm run add:redirects",
     "copyStatics": "mkdir -p _site/public/head && cp -r src/head _site/public/head",
     "add:sitemap": "node ./makeSitemap.js",
     "add:redirects": "cp _redirects dist/"

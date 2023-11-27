@@ -10,10 +10,6 @@ layout: base.njk
     <noscript><link rel="stylesheet" href="styles/scroll-snap.css"></noscript>
 {% endblock %}
 
-<script type="module">
-  import "./scripts/register-service-worker.js"
-</script>
-
 <section id="title" class="vh-100 bg-red white z-2 relative">
   <div class="h-100 mw9 center pa4 pt5-ns ph7-l flex flex-column justify-between">
   <header>
@@ -49,10 +45,14 @@ layout: base.njk
 
 
 <script>
-  const a11y_conform_bg = ['#E7040F', '#FF4136', '#D5008F', '#137752', '#001B44', '#00449E', '#357EDD', '#333333', '#19A974', '#357EDD']
+  const a11y_conform_bg = ['#E7040F', '#FF4136', '#D5008F', '#137752', '#001B44', '#00449E', '#357EDD', '#333333', '#19A974', '#5E2CA5', '#A463F2', '#000000', '#111111', '#FF4136', '#A463F2', '#FF41B4', ]
   document.querySelector('#title').style.backgroundColor = a11y_conform_bg[Math.floor(Math.random() * a11y_conform_bg.length)]
 </script>
 
 <section id="movies"></section>
 
 <script type="module" src="./scripts/load-articles.js" defer></script>
+
+<script type="module">
+  import "./scripts/register-service-worker.js"
+</script>

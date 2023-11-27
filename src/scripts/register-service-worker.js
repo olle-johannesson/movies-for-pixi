@@ -1,5 +1,6 @@
 
+window.addEventListener('load', () => {
 navigator?.serviceWorker?.register?.(
   new URL('./service-worker.js', import.meta.url),
-  {type: 'module'}
-);
+  {type: 'module', scope: '/'}
+)});

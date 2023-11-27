@@ -1,52 +1,93 @@
 const CACHE_NAME = 'pixi-movies_v1'
-const coreAssets = ['']
+const coreAssets = [
+  '/',
+  '/directors',
+  '/directors/', 
+  '/movies',
+  '/movies/'
+]
 const whitelistSchemes = ['http', 'https'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
-      .then((cache) => cache.addAll(coreAssets))
+      .then(cache => cache.addAll(coreAssets))
+      .catch(console.error)
   );
 });
 
-/**
- * HTML requests are the basis of all other requests on this site,
- * so they should be served fresh if possible.
- * Otherwise, revert to cached results.
- * 
- * Since parcel will add content-hashes to the file names, we can
- * just cache everything else.
- */
+function rejectUndefined(x) {
+  return x || Promise.reject('failed to load resource')
+}
+
+function cleanResponse(response) {
+  if(!response) {
+    console.log('got undefined')
+    return
+  }
+  if (!(response || 'clone' in response)) {
+    console.log('got a ', typeof response)
+    return
+  }
+  const clonedResponse = response.clone();
+
+  const bodyPromise = 'body' in clonedResponse ?
+    Promise.resolve(clonedResponse.body) :
+    clonedResponse.blob();
+
+  return bodyPromise.then((body) => {
+    return new Response(body, {
+      headers: clonedResponse.headers,
+      status: clonedResponse.status,
+      statusText: clonedResponse.statusText,
+    });
+  });
+}
+
+function stale_while_revalidate(cacheName, event) {
+  caches.open(cacheName)
+    .then(cache => cache.match(event.request)
+      .then(cachedResponse => {
+        const networkResponse = fetch(event.request)
+          .then(networkResponse => {
+            if (networkResponse.ok) {
+              cache.put(event.request, networkResponse.clone())
+              return networkResponse
+            }
+          })
+        return cachedResponse || networkResponse
+      })
+      .then(rejectUndefined)
+      .then(cleanResponse)
+      .then(response => event.respondWith(response))
+      .catch(console.error)
+    )
+}
+
+function offline_first(cacheName, event) {
+  event.respondWith(caches.match(event.request)
+      .then(cachedResponse => cachedResponse || fetch(event.request)
+        .then(response => caches.open(cacheName)
+          .then(cache => (cache.put(event.request, response.clone()), response)))))
+}
+
 self.addEventListener('fetch', (event) => {
+  console.log('foo')
   const request = event.request
   const requestUrl = new URL(request.url);
-  const isHTMLRequest = request.mode === 'navigate' || request.headers.get('accept').includes('text/html')
+  const isNavigation = request.mode === 'navigate'
   const isChromeExtensionRequest = requestUrl.protocol === 'chrome-extension:'
+  const isWebsiteMetadataRequest = request.url.includes('/head/')
   const isRelevantScheme = whitelistSchemes.includes(requestUrl.protocol.replace(':', ''))
-  
+
   if (isChromeExtensionRequest || !isRelevantScheme) {
     return;
-  }
-
-  if (isHTMLRequest) { 
-    // online first
-    event.respondWith(fetch(request)
-      .then(networkResponse => caches
-        .open(CACHE_NAME)
-        .then(cache => networkResponse.ok 
-            ? (cache.put(request, networkResponse.clone()), networkResponse)
-            : Promise.reject('failed to load resource')  
-        )
-      )
-      .catch(() => caches.match(request))
-    );
+  } else if (isNavigation) {
+    stale_while_revalidate(CACHE_NAME, event)
   } else { 
-    // offline first
-    event.respondWith(caches.match(request)
-        .then(cachedResponse => cachedResponse || fetch(request)
-          .then(response => caches.open(CACHE_NAME)
-            .then(cache => cache.put(request, response.clone()))
-            .then(() => response))))
-    }
+    offline_first(CACHE_NAME, event)
+  }
 })
+
+
