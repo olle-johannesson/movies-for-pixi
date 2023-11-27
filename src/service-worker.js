@@ -2,9 +2,11 @@ const CACHE_NAME = 'pixi-movies_v1'
 const coreAssets = [
   '/',
   '/directors',
-  '/directors/', 
+  '/directors/',
   '/movies',
-  '/movies/'
+  '/movies/',
+  '/error-pages/404',
+  '/error-pages/offline'
 ]
 const whitelistSchemes = ['http', 'https'];
 
@@ -22,14 +24,10 @@ function rejectUndefined(x) {
 }
 
 function cleanResponse(response) {
-  if(!response) {
-    console.log('got undefined')
-    return
-  }
   if (!(response || 'clone' in response)) {
-    console.log('got a ', typeof response)
     return
   }
+
   const clonedResponse = response.clone();
 
   const bodyPromise = 'body' in clonedResponse ?
@@ -46,46 +44,53 @@ function cleanResponse(response) {
 }
 
 function stale_while_revalidate(cacheName, event) {
-  caches.open(cacheName)
-    .then(cache => cache.match(event.request)
-      .then(cachedResponse => {
-        const networkResponse = fetch(event.request)
-          .then(networkResponse => {
-            if (networkResponse.ok) {
-              cache.put(event.request, networkResponse.clone())
+  event.respondWith(
+    caches.open(cacheName)
+      .then(cache => cache.match(event.request)
+        .then(cachedResponse => {
+          const networkResponse = fetch(event.request)
+            .then(networkResponse => {
+              if (networkResponse.ok) {
+                cache.put(event.request, networkResponse.clone())
+              }
               return networkResponse
-            }
-          })
-        return cachedResponse || networkResponse
-      })
-      .then(rejectUndefined)
-      .then(cleanResponse)
-      .then(response => event.respondWith(response))
-      .catch(console.error)
-    )
+            })
+            .catch(error => {
+              console.error(error)
+              return cache.match('/error-pages/offline')
+                .then(cleanResponse)
+            })
+          if (cachedResponse) {
+            return cleanResponse(cachedResponse)
+          }  
+          return networkResponse
+        })
+        .catch(error => {
+          console.error('Error in fetch handler:', error);
+          throw error;
+        })
+      ))
 }
 
 function offline_first(cacheName, event) {
   event.respondWith(caches.match(event.request)
-      .then(cachedResponse => cachedResponse || fetch(event.request)
-        .then(response => caches.open(cacheName)
-          .then(cache => (cache.put(event.request, response.clone()), response)))))
+    .then(cachedResponse => cachedResponse || fetch(event.request)
+      .then(response => caches.open(cacheName)
+        .then(cache => (cache.put(event.request, response.clone()), response)))))
 }
 
 self.addEventListener('fetch', (event) => {
-  console.log('foo')
   const request = event.request
   const requestUrl = new URL(request.url);
   const isNavigation = request.mode === 'navigate'
   const isChromeExtensionRequest = requestUrl.protocol === 'chrome-extension:'
-  const isWebsiteMetadataRequest = request.url.includes('/head/')
   const isRelevantScheme = whitelistSchemes.includes(requestUrl.protocol.replace(':', ''))
 
   if (isChromeExtensionRequest || !isRelevantScheme) {
     return;
   } else if (isNavigation) {
     stale_while_revalidate(CACHE_NAME, event)
-  } else { 
+  } else {
     offline_first(CACHE_NAME, event)
   }
 })
