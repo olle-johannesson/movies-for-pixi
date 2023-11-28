@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pixi-movies_v1'
+import { manifest, version as CACHE_NAME } from '@parcel/service-worker';
 const coreAssets = [
   '/',
   '/directors',
@@ -14,14 +14,10 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
-      .then(cache => cache.addAll(coreAssets))
+      .then(cache => cache.addAll(manifest))
       .catch(console.error)
   );
 });
-
-function rejectUndefined(x) {
-  return x || Promise.reject('failed to load resource')
-}
 
 function cleanResponse(response) {
   if (!(response || 'clone' in response)) {
