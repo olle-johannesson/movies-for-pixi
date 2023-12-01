@@ -10,6 +10,8 @@ const coreAssets = [
 ]
 const whitelistSchemes = ['http', 'https'];
 
+// FIXME: Too aggressive caching: assets loading time too long on slow connections
+// TODO: Research benchmarks and test aticipatory caching
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches
