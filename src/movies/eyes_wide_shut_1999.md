@@ -1,5 +1,5 @@
 ---
-title: "Eyes wide shut"
+title: "Eyes Wide Shut"
 
 year: 1999
 

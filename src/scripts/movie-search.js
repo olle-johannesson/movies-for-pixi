@@ -110,13 +110,8 @@ function restoreSession() {
   filterMovies()
 }
 
-function resetLinks() {
-  document.querySelectorAll('[data-jse]').forEach(element => element.href = element.dataset.jse)
-}
-
 initYearSlider()
 restoreSession()
-resetLinks()
 getSearchForm().onsubmit = () => false
 getSearchForm().addEventListener('input', filterMovies)
 getSearchForm().addEventListener('input', debounce(saveFormData))

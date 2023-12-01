@@ -5,6 +5,8 @@ const coreAssets = [
   '/directors/',
   '/movies',
   '/movies/',
+  '/oscars',
+  '/oscars/',
   '/error-pages/404',
   '/error-pages/offline'
 ]

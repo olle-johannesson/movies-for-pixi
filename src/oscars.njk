@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: All movies
+permalink: "/oscars/index.html"
+---
+
+{% import "oscarCategory.njk" as oscar %}
+
+
+<article class="pa3 pa5-ns w-100">
+  <div class="w-100 cf">
+    <header class="fl pa3-m pa4-l mb3 mb5-l">
+      <div class="w-100 w-50-l">
+      <h2 class="lh-title f3 b mt0">
+        Welcome to the first oscars of movies Pixi should watch!
+      </h2>
+      </div>
+      
+      <div class="dib f5 measure mr4 v-top">
+        <p class="f5 lh-copy">
+            Sometimes the right movie doesn't win. Even on this website life isn't completely fair. It is fairer than in real life, however, and some movies definitely should have faired better than they did. It is time to rectify that.
+        </p>
+      </div>
+      <div class="dib f5 measure mr4 v-top">
+        <p class="f5 lh-copy">
+            So this website doesn't list actors (yet), not does it writers or cinematographers (also, yet), though often they are at least as important as the director (if not more). 
+            How much of Bergmans movies would be left without Sven Nykvist? What would be left of any movie without its writer (or actors)?
+            Well, before I've added more meta-data to this website, the movie names will have to do. They are the things you'll watch anyway.
+        </p>
+      </div>
+      
+    </header>
+  </div>
+
+  <div class="w-100 cf">
+    {{ oscar.category("Best Picture", ["To Catch a Thief", "The Godfather", "Rosemary's baby", "Fanny and Alexander", "Robocop"], "The Godfather", collections.movies) }}
+  </div>
+
+  <div class="w-100 cf">
+    {{ oscar.category("Best Director", ["Barry Lyndon", "My Neighbor Totoro", "The Birds", "Raging Bull", "Rosemary's Baby"], "The Birds", collections.movies) }}
+    {{ oscar.category("Best Actor", ["Singin' in the Rain", "Top Gun", "Raging Bull", "The Godfather", "The Apartment"], "Top Gun", collections.movies) }}
+    {{ oscar.category("Best Actress", ["Roman Holiday", "Casablanca", "Alien", "Eyes Wide Shut", "To Catch a Thief"], "To Catch a Thief", collections.movies) }}
+  </div>
+
+  <div class="w-100 cf">
+    {{ oscar.category("Best Cinematography", ["The Cook, the Thief, His Wife & Her Lover", "Barry Lyndon", "Fanny and Alexander", "Braveheart", "Blade Runner"], "Barry Lyndon", collections.movies) }}
+    {{ oscar.category("Best Production Design", ["Barry Lyndon", "Alien", "You, the Living", "The Grand Budapest Hotel", "Crouching Tiger, Hidden Dragon"], "Alien", collections.movies) }}
+    {{ oscar.category("Best Film Editing", ["American History X", "The Matrix", "Amélie", "No Country for Old Men", "Before Sunset"], "American History X", collections.movies) }}
+    {{ oscar.category("Best Visual Effects", ["Titanic", "The Lord of the Rings: The Fellowship of the Ring", "Jurassic Park", "Terminator 2: Judgment Day"], "Jurassic Park", collections.movies) }}
+  </div>
+
+  <div class="w-100 cf">
+    {{ oscar.category("Best Original Screenplay", ["Casablanca", "Le Havre", "The Apartment", "Annie Hall", "True Romance"], "Casablanca", collections.movies) }}
+    {{ oscar.category("Best Adapted Screenplay", ["Who's Afraid of Virginia Woolf?", "The Godfather", "The Lord of the Rings: The Fellowship of the Ring", "Amadeus", "The Silence of the Lambs"], "Who's Afraid of Virginia Woolf?", collections.movies) }}
+    {{ oscar.category("Best Supporting Actor", ["Casablanca", "True Romance", "Ed Wood", "Good Will Hunting", "The Godfather Part II"], "Casablanca", collections.movies) }}
+    {{ oscar.category("Best Supporting Actress", ["All About Eve", "Le Havre", "The Thomas Crown Affair", "Vicky Cristina Barcelona", "Terminator 2: Judgment Day"], "Vicky Cristina Barcelona", collections.movies) }}
+  </div>
+
+  <div class="w-100 cf">
+    {{ oscar.category("Best Costume Design", ["Bram Stoker's Dracula", "Mad Max: Fury Road", "The Grand Budapest Hotel", "Titanic", "Barry Lyndon"], "Bram Stoker's Dracula", collections.movies) }}
+    {{ oscar.category("Best Animated Feature", ["Spirited Away", "Spirited Away", "Spirited Away", "Spirited Away", "Spirited Away"], "Spirited Away", collections.movies) }}
+    {{ oscar.category("Best Awesome ride", ["Mad Max: Fury Road", "Battle Royal", "Gone with the Wind", "Spirited Away", "You, the Living"], "Battle Royal", collections.movies) }}
+  </div>
+</article>
+
+<script src="../scripts/javascript-enabled-links.js"></script>

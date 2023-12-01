@@ -1,0 +1,41 @@
+{% macro category(category, nominated, winner, allMovies) %}
+
+  <div class="fl w-100 w-50-m w-25-l pa3-m pa4-l" style="background-color: inherit;">
+    <h3 class="f6 ttu tracked">{{ category }}</h3>
+    <dl class="fl fn-l dib-l w-auto-l lh-title mr5-l">
+      <dt class="f6 fw4 ml0">Nominees</dt>
+      
+      {% for nomination in nominated %}
+        {% set movieFound = false %}
+
+        {% for movie in allMovies %}
+          {% if (movie.data.title == nomination)  %}
+            {% set movieFound = true %}
+            <a href="/movies/{{ movie.fileSlug }}" class="link dim color-inherit" data-jse="/#{{ movie.data.id }}">
+              <dd class="f4 fw6 ml0">{{ nomination }}</dd>
+            </a>
+          {% endif %}
+        {% endfor %}
+        {% if not movieFound %}
+          <dd class="f4 fw6 ml0">{{ nomination }}</dd>
+        {% endif %}
+      {% endfor %}
+
+      <details class="pt2">
+        <summary class="f6 fw4 ml0">And the oscar goes to...</summary>
+        {% set winnerFound = false %}
+        {% for movie in allMovies %}
+          {% if (movie.data.title == winner)  %}
+            {% set winnerFound = true %}
+            <a href="/movies/{{ movie.fileSlug }}" class="link dim color-inherit" data-jse="/#{{ movie.data.id }}">
+              <dd class="f3 fw6 ml0 gold">{{ winner }}</dd>
+            </a>
+          {% endif %}
+        {% endfor %}
+        {% if not winnerFound %}
+          <dd class="f3 fw6 ml0 gold">{{ winner }}</dd>
+        {% endif %}
+      </details>
+    </dl>
+  </div>
+{% endmacro %}
