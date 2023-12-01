@@ -1,4 +1,4 @@
-import { manifest, version as CACHE_NAME } from '@parcel/service-worker';
+const CACHE_NAME = "movies_for_pixi_v1"
 const coreAssets = [
   '/',
   '/directors',
@@ -10,13 +10,11 @@ const coreAssets = [
 ]
 const whitelistSchemes = ['http', 'https'];
 
-// FIXME: Too aggressive caching: assets loading time too long on slow connections
-// TODO: Research benchmarks and test aticipatory caching
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
-      .then(cache => cache.addAll(manifest))
+      .then(cache => cache.addAll(coreAssets))
       .catch(console.error)
   );
 });
