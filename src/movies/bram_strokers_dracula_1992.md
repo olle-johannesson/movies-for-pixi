@@ -1,5 +1,5 @@
 ---
-title: "Bram Strokers Dracula"
+title: "Bram Stroker's Dracula"
 
 year: 1992
 
