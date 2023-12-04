@@ -1,7 +1,8 @@
 ---
 title: Movies Pixi should watch
-layout: base.njk
 ---
+
+{% extends "./_includes/base.njk" %}
 
 {% block head %}
     <link rel="stylesheet" href="styles/bkg-img.css" media="print" onload="this.media='all'"">
@@ -10,6 +11,7 @@ layout: base.njk
     <noscript><link rel="stylesheet" href="styles/scroll-snap.css"></noscript>
 {% endblock %}
 
+{% block content %}
 <section id="title" class="vh-100 bg-red white z-2 relative">
   <div class="h-100 mw9 center pa4 pt5-ns ph7-l flex flex-column justify-between">
   <header>
@@ -53,7 +55,4 @@ layout: base.njk
 <section id="movies"></section>
 
 <script type="module" src="./scripts/load-articles.js" defer></script>
-
-<script type="module">
-  import "./register-service-worker.js"
-</script>
+{% endblock %}
