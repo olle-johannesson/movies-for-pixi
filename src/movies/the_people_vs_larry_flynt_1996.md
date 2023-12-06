@@ -5,9 +5,9 @@ year: 1996
 
 director: "Milos Forman"
 
-summary: "Biography movie abobut Larry Flynt (publisher of Hustler magazine)"
+summary: "Biopic about Larry Flynt (publisher of Hustler magazine)"
 
-comment: "Good scenes, good lines"
+comment: "I love the scene in the surpreme court! That Edward Norton guy sure can deliver. Also, do you think Courtney Love enjoyed filming this?"
 
 image: "https://media.giphy.com/media/PAv0TgCvCLlpm/giphy.gif"
 

@@ -7,7 +7,7 @@ director: "Quentin Tarantino"
 
 summary: "A woman fights her way through her old commando team, now villains in a campy vendetta"
 
-comment: "Rape-Revenge irony overkill by Tarantino, who finds the sweet spot wide of the mark in this 80s-ninja-craze flashback"
+comment: "Rape-Revenge irony overkill by Tarantino. Do you think he waited all his life to have 'Bang Bang' by Nancy Sinatra as the soundtrack to something?"
 
 image: "https://media.giphy.com/media/ozXTrqRgqFcly/giphy.gif"
 

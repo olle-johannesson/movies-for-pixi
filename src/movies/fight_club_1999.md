@@ -7,7 +7,7 @@ director: "David Fincher"
 
 summary: "Insomniac Office rat & co expresses disappointment with society through soap, bare-knuckle fights and low-key terrorism"
 
-comment: "I hate this movie. And love it. It tries so hard to be cool, can't decide what it is about, but is super well made"
+comment: "I hate this movie, but I love the scenes in it."
 
 image: "https://media.giphy.com/media/JQtjrjz75ttYY/giphy.gif"
 

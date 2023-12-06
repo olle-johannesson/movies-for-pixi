@@ -7,7 +7,7 @@ director: "John Landis"
 
 summary: "Two brothers (who play the blues) gets their (blues-) band back together"
 
-comment: "A SNL sketch that got feature-length budget and went classic. This, children, was at a time when even making a point of leaving subtility behind in visual gags behind had a subtle effect. You don't even have to have seen Bullit or Cannonball Run or any classic car chase scene to understand the sarcasm here. Also, Carrie Fischer is in it, and it's not Star Wars!"
+comment: "A SNL sketch that got feature-length budget and went classic. This, children, was at a time when even making a point of being unsubtle in visual gags  had a subtle effect. You don't even have to have seen Bullit or Cannonball Run or any classic car chase scene to understand the sarcasm here. Also, Carrie Fischer is in it, and it's not Star Wars!"
 
 image: "https://media.giphy.com/media/2LUvrAtwUY54k/giphy.gif"
 

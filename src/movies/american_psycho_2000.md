@@ -7,7 +7,7 @@ director: "Mary Harron"
 
 summary: "Wealthy and superficial banker deals with peer pressure"
 
-comment: "Not just a comment on the rich, or superficiality, but a brilliant mirroring of inside and outside, commenting on both."
+comment: "Not just a comment on class or superficiality, but a mirroring of the inside and outside of a man"
 
 image: "https://media.giphy.com/media/Qeo9S31SuTMpa/giphy.gif"
 

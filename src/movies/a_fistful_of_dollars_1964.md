@@ -9,7 +9,7 @@ summary: "A mysterious lonely cowboy cleans up a town plagued by rival gangs"
 
 comment: "Spaghetti western adaptation of 'Yojimbo'"
 
-image: "https://media.giphy.com/media/MTsvDBZCEffrO/giphy.gif"
+image: "https://media.giphy.com/media/aIeHPUpwLRk0E/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0058461/"
 

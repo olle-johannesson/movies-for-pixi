@@ -7,7 +7,7 @@ director: "George Roy Hill"
 
 summary: "A con man joins another con man to do the ultimate con."
 
-comment: "Depression era Redford / Newman in peak form"
+comment: "Robert Redford and Paul Newman in cool 30s-style suits and hats"
 
 image: "https://media.giphy.com/media/xciIjJ3T1j1Wo/giphy.gif"
 

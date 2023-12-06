@@ -7,7 +7,7 @@ director: "David Fincher"
 
 summary: "Bored housewife fakes her own death. But how innocent is her husband really?"
 
-comment: "A pretty good movie to watch at some time."
+comment: "Twists and turns all day long. A pretty cool idea for a film!"
 
 image: "https://media.giphy.com/media/3oKIPEddw3plWiB9Ti/giphy.gif"
 

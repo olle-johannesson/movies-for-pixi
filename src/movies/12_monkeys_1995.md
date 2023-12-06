@@ -7,7 +7,7 @@ director: "Terry Gilliam"
 
 summary: "Bruce Willis travels in time to spy on biological terrorists that effed his timeline"
 
-comment: "A classic wierdo film. Starring Brad Pitt in a crazy role"
+comment: "Another classic 90s dystopian-future-time-travel-someone-is-crazy film. What was up with that decade anyway?"
 
 image: "https://media.giphy.com/media/4LQNWicmuRhGo/giphy.gif"
 

@@ -7,7 +7,7 @@ director: "Stanley Donen"
 
 summary: "Three sailors discover New York during 24 hours"
 
-comment: "Young Frank Sinatra and Gene Kelly dancing and singing"
+comment: "Frank sinatra was 34 and Gene Kelly was 37 when filming this"
 
 image: "https://media.giphy.com/media/65MptVB6YVqQVHupqL/giphy.gif"
 

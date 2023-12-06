@@ -7,7 +7,7 @@ director: "Stephen Daldry"
 
 summary: "A working class boy discovers the joy of ballet"
 
-comment: "Would you dare to be different to be true to yourself?"
+comment: "The scene where the dad breaks the strike always gets me"
 
 image: "https://media.giphy.com/media/WNOAWHM3bHd1m/giphy.gif"
 

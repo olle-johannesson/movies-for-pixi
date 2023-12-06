@@ -5,9 +5,9 @@ year: 2000
 
 director: "Andrew Dominik"
 
-summary: "Guns, drugs and a big mouth are the constant companions of this constant criminal" 
+summary: "Guns, drugs and a neverending mouthing off in the filmatisation of Mark 'Chopper' Reids autobiography (he was a criminal down under on his luck)" 
 
-comment: "Eric Bana shines in the filmatisation of a Mark 'Chopper' Reids autobiography."
+comment: "Eric Bana never got the hollywood fame he deserved in my opinion."
 
 image: "https://media.giphy.com/media/R7Fig9tE7kcBBYUKNi/giphy.gif"
 

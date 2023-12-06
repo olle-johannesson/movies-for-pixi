@@ -7,7 +7,7 @@ director: "Mike Leigh"
 
 summary: "Biography film about 19th century painter J.M.W. Turner"
 
-comment: "Beautifully shot, never overexplaining itself, not overreaching its scope. This is how biographical movies should be made."
+comment: "Beautifully shot, never overexplaining itself, not overreaching its scope. This is how biopics should be made."
 
 image: "https://media.giphy.com/media/3oEdvbeRbvzWTdizBu/giphy.gif"
 

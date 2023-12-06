@@ -5,9 +5,9 @@ year: 1944
 
 director: "Billy Wilder"
 
-summary: "A femme fatale and a scam."
+summary: "An insurance worker commits insurance fraud for a femme fatale"
 
-comment: "Machine-gun-speed dialog in the archetypical film noire!"
+comment: "In competition with The Maltese Falcon of being the archetypical film noire"
 
 image: "https://media.giphy.com/media/kf3yjaBKEzfZOY84f9/giphy.gif"
 

@@ -7,7 +7,7 @@ director: "Bong Joon Ho"
 
 summary: "A poor family makes the most of a opportunity when their son gets a tutoring job at a wealthy familys home"
 
-comment: "Simply well made, won 6 Oscars (Best Picture, Best Director, Best Original Screenplay, Best Film Editing, etc)"
+comment: "Won 6 Oscars (Picture, Director, Screenplay, Editing Production design, foreign movie), but perhaps 2019 just wasn't a great year for movies otherwise..."
 
 image: "https://media.giphy.com/media/QuCViA0jSSfWxdghms/giphy-downsized-large.gif"
 

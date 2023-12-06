@@ -7,7 +7,7 @@ director: "Tony Kaye"
 
 summary: "Neo-nazi derek has to face what makes his life better"
 
-comment: "That one scene with the curb..."
+comment: "Edward Norton famously made several changes to the script during production, and secretly re-edited the movie to what we now see. It turned out great, but director Tony Kaye was understandably not amused and it had consequences for Nortons career"
 
 image: "https://media.giphy.com/media/3XPsFRp58nzTW/giphy.gif"
 

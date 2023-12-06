@@ -7,7 +7,7 @@ director: "Mel Gibson"
 
 summary: "A midieval scotsman rebels agains english oppression"
 
-comment: "Even though the only thing this historical biopic gets right is that Edward I's son was probably gay, it is still one hell of a movie!"
+comment: "The only thing this historical biopic gets right is that Edward I's son might have been probably gay, but it is still one hell of a movie!"
 
 image: "https://media.giphy.com/media/s9y2gNNce6orC/giphy.gif"
 

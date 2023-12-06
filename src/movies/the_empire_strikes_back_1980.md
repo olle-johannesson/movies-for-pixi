@@ -15,7 +15,6 @@ imdb: "https://www.imdb.com/title/tt0080684/"
 
 quotes:
   - "Do... or do not. There is no try."
-  - "No. *I* am your father."
   - "That's impossible!"
-  - "Search your feelings, you *know* it to be true!"
+  - "Impressive... Most Impressive!"
 ---

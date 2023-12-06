@@ -5,7 +5,7 @@ year: 1994
 
 director: "Quentin Tarantino"
 
-summary: "A sequence of hard-boiled tough guys who gets sequentially suprised."
+summary: "A sequence of tough guys gets non-sequentially suprised."
 
 comment: "Whenever someone makes a tarantino-list, this–unlike any other of his films–has to be on it"
 

@@ -5,9 +5,9 @@ year: 1993
 
 director: "Steven Spielberg"
 
-summary: "Oh no, this island is full of dinosaurs!"
+summary: "A billionaire makes a zoo on an island with real dinosaurs. Sam Neill comes to check it out"
 
-comment: "Its more than 30 years later and it still looks good. This is what practical effects give in competent hands"
+comment: "Its more than 30 years later and it still looks good! This is why people do practical effects"
 
 image: "https://media.giphy.com/media/WsihkyEPkLlfovttgV/giphy-downsized-large.gif"
 

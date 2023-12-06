@@ -7,7 +7,7 @@ director: "Milos Forman"
 
 summary: "Biography movie abobut Mozart."
 
-comment: "Just like Jurassic Park, you sometimes have to pinch yourself thinking about how good it looks and the quality of the storytelling"
+comment: "Deservedly won a gazillion oscars. Looks amazingly good, really. Hard to believe it was made in 1984"
 
 image: "https://media.giphy.com/media/mGj3SVN7xbPQ4/giphy.gif"
 

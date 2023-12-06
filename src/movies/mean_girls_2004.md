@@ -7,7 +7,7 @@ director: "Mark Waters"
 
 summary: "She grew up in the jungle, but can she survive high school?"
 
-comment: "A cult classic. Probably because it somehow cracked the code of making a high-school comedy that's actually good. This is peak Lindsay Lohan, Rachel McAdams broke out by perfecting her role, and Tina Fey showed her writing skills."
+comment: "A cult classic. Probably because it somehow cracked the code of making a high-school comedy that's actually good"
 
 image: "https://media.giphy.com/media/3o7aTy3ePwrk5D3bHO/giphy.gif"
 
