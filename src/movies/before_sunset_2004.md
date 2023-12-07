@@ -9,7 +9,7 @@ summary: "He is american, she is french. They have only one afternoon in Paris t
 
 comment: "I'm telling you, Pixi, if you watch movies like this dubbed to german I'm taking down this whole website!"
 
-image: "https://media.giphy.com/media/9zt4tLxLtP7Es/giphy.gif"
+image: "https://media.giphy.com/media/rvzbOcYmR7GZW/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0381681/"
 

@@ -9,7 +9,7 @@ summary: "He is american, she is french. They have only one night in Vienna to..
 
 comment: "How can this be so good and so popular as it is? Is it the kitsch, or is it actually hitting a nerve? If you like long takes, this is for you. If you like your movies dubbed in german, get the f away from this website!"
 
-image: "https://media.giphy.com/media/3ktKnS9c6MfQJeJWq2/giphy.gif"
+image: "https://media.giphy.com/media/9zt4tLxLtP7Es/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0112471/"
 
