@@ -7,7 +7,7 @@ director: "Alfred Hitchcock"
 
 summary: "A motel caretaker sure takes care of business"
 
-comment: "One of those 'got to have it on the list' films. Really, you havn't seen it?"
+comment: "When she lies on the bathroom floor and the camera zooms out from the closeup of her eye: Try not to blink for as long as the actress."
 
 image: "https://media.giphy.com/media/8d83jkdn9OgdW/giphy.gif"
 
