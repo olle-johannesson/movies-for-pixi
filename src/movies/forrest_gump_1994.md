@@ -9,6 +9,8 @@ summary: "American history between late 1950s and early 1980s told as backdrop o
 
 comment: "It's AIDS, if you were wondering. And yes, HIV is transmittable from mother to the baby during pregnancy."
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc24ybGhseDZjMndheWk5c2J0aXZ5cWxndjYzdGZ0N2w4ejJwMnZhcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ftqg6fMvi3R9LVcU0t/giphy.mp4"
+
 image: "https://media.giphy.com/media/ftqg6fMvi3R9LVcU0t/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0109830/"

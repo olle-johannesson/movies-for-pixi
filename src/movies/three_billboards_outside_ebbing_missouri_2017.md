@@ -9,6 +9,8 @@ summary: "Unimpressed with the police's handling of a case, a woman posts their 
 
 comment: "Do you know when you watch a movie and it could have been terrible, but constantly surprises you with being really good?"
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmNwdG5mOGlsYjJ0ZWYza2V5d3FueTIzY25laWQ0b2I0Z2Z5ZDkzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT1TU2yS6p2bKyqJNu/giphy.mp4"
+
 image: "https://media.giphy.com/media/xT1TU2yS6p2bKyqJNu/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt5027774/"

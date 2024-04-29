@@ -9,6 +9,8 @@ summary: "Schwarzenegger gets is ass to Mars only to find more corruption and st
 
 comment: "A wonderfully terrible movie that everone loves. Full of great arnie-quotes and it has Michael Ironside!"
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjcwNjg3MzVvNW1vY2R0OG40ODF2dzVid2J3NDdwNHJwejA0cTcxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qHBBYAh7BZVm/giphy.mp4"
+
 image: "https://media.giphy.com/media/qHBBYAh7BZVm/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0100802/"

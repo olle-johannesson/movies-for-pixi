@@ -9,6 +9,8 @@ summary: "When F.B.I. can't catch a serial murdering psychopath, they need the h
 
 comment: "Anthony Hopkins gives a career-defining performance"
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmI4d2Z6Z3hwb2FxYWZvc2c5dTBwOWYxcGN6bng4eTgyejAxN3lmYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VvTG9RrCeGrza/giphy.mp4"
+
 image: "https://media.giphy.com/media/VvTG9RrCeGrza/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0102926/"

@@ -9,6 +9,8 @@ summary: "A corrupt police detective has one chance left to find redemption"
 
 comment: "Harvey Keitel was 53 when he filmed this. Think about that in that one scene. Yes i know the clip here is from a different movie, but its a movie from the same year at least"
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3phcDA2dWF0Y2M5Mmc3MWY2OWdrcmFpOHBwa3B0M2YwenNiZHI5MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KNNh3ZshGXkqY/giphy.mp4"
+
 image: "https://media.giphy.com/media/KNNh3ZshGXkqY/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0103759/"

@@ -9,6 +9,8 @@ summary: "A robot made from the remains of dead cop cleans up detroit of the fut
 
 comment: "This frankensteinian 80s action classic has been described as the perfect movie (seriously). It feels very unlikely, but it might actually be true."
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2Q1ZjEyZ3hxM3RwcGg0eDV1Y21xbWhoc21idDBqYmpibGc4enVwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KDEIKGUrdMYbrNF62H/giphy.mp4"
+
 image: "https://media.giphy.com/media/KDEIKGUrdMYbrNF62H/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0093870/"

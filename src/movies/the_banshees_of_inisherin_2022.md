@@ -9,6 +9,8 @@ summary: "A one-sided break-up between two friends tears up unintended wounds in
 
 comment: "Hits a sweetspot between drama and comedy. Was also long awaited by critics and fans."
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXF0MXlvODRyZXB6YWdmMnMzc2o0MHl0cnIzeDBldDRwdzRseDloNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qsNFGVlMry5JgKSANa/giphy.mp4"
+
 image: "https://media.giphy.com/media/qsNFGVlMry5JgKSANa/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt11813216/"

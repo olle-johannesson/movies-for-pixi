@@ -9,6 +9,8 @@ summary: "A group of friends have to pay £500.000 in a week or else"
 
 comment: "Cockney-slinging action-comedy that revitalised the british gangster genre. Makes for a north/south comparison with Get Carter (1971)"
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZmbTEyYWI1bHBza24zMnpweWFmeHRuaWw2emxic3RnZXJsa2tyaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PkimPOMOVbcMU/giphy.mp4"
+
 image: "https://media.giphy.com/media/PkimPOMOVbcMU/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0120735/"

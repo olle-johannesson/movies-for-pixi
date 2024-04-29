@@ -9,6 +9,8 @@ summary: "Guns, drugs and a neverending mouthing off in the filmatisation of Mar
 
 comment: "Eric Bana never got the hollywood fame he deserved in my opinion."
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHlpZ3dvcXpxanNjNTF6bHI1YWl5OGtmNmw1bjVwNDN3N2Y3cTVseSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/R7Fig9tE7kcBBYUKNi/giphy.mp4"
+
 image: "https://media.giphy.com/media/R7Fig9tE7kcBBYUKNi/giphy.gif"
 
 imdb: "https://www.imdb.com/title/"

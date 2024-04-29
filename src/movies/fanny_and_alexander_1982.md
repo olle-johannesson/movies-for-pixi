@@ -9,6 +9,8 @@ summary: "Two young children in the early 1900s experiences two or more sides of
 
 comment: "We're talking the 5 hour version here, of course."
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmQ4NGFuMXAwcmx0c2c3N2hwMnVtdnVpOWZhMnhrbW4xeGZnaW9kbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3nWrujMp1JeT1W2Q/giphy.mp4"
+
 image: "https://media.giphy.com/media/l3nWrujMp1JeT1W2Q/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0083922/"

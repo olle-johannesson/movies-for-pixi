@@ -9,6 +9,8 @@ summary: "A bunch of cyborgs shoot guns and philosophise about life and existanc
 
 comment: "This is the difintive action-meets-philosophy effort. The dialogue can be a bit fast, but it's super cool and very impressive. There was an american live-action remake made. Avoid that one."
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXZwd2R4Zng4eHdodDA2eXhtNWxyM3dmeWxsMDhtYjFoMnRoejl6NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nlk3Y1u3r1n5C/giphy.mp4"
+
 image: "https://media.giphy.com/media/nlk3Y1u3r1n5C/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0113568/"

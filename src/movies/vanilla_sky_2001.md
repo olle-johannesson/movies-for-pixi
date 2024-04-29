@@ -9,6 +9,8 @@ summary: "A vain mans face is damaged in an accident and he must reevaluate his 
 
 comment: "Remake of the spanish original 'Abre los ojos', also with Penelope Cruz"
 
+video: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3lnajFmMGlybXFuOTZteTM5cGhrZTZtNHUxeXZlODN4cTRubm81aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bOi7BLjgxHeEw/giphy.mp4"
+
 image: "https://media.giphy.com/media/bOi7BLjgxHeEw/giphy.gif"
 
 imdb: "https://www.imdb.com/title/tt0259711/"
