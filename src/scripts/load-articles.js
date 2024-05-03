@@ -1,15 +1,17 @@
 import articleManifest from '../movies/a-*.html'
+import { initiateVideoControllingObservers } from './start-and-stop-videos'
 
 document.addEventListener('DOMContentLoaded', () => {
   const PREFETCH_N = 6
   const allArticles = Object.values(articleManifest).map(source => source.slice(source.lastIndexOf('/'))).sort(() => Math.random() - 0.5)
   const articlesContainer = document.getElementById('movies') 
-  const observer = new IntersectionObserver(onIntersection, {
+  const videoLoadingObserver = new IntersectionObserver(onIntersection, {
     rootMargin: '0%',
     threshold: 0.1,
   })
+  const observeToPlayAndPauseVideo = initiateVideoControllingObservers()
 
-  addNextN(observer).then(() => {
+  addNextN(videoLoadingObserver).then(() => {
     if (window.location.hash) {
       const articleToScrollTo = document.querySelector(window.location.hash);
       if (window.location.hash === '#title') {
@@ -17,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (articleToScrollTo) {
         articleToScrollTo.scrollIntoView();
       } else {
-        addThis(window.location.hash.slice(1), observer)
+        addThis(window.location.hash.slice(1), videoLoadingObserver)
       }
     }
   })
@@ -48,6 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (articles[0] && allArticles.length) {
       obs.observe(articles[0])
     }
+
+    articles.filter(Boolean).forEach(observeToPlayAndPauseVideo)
 
     return articles
   }

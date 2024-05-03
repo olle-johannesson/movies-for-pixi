@@ -5,7 +5,10 @@
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
+}
+
+main, #movies {
+  height: 100vh
 }
 
 @media screen and (max-width: 60em) {
