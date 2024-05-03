@@ -10,10 +10,17 @@ permalink: "movies/a-{{ movie.data.id }}.html"
 <article class="vh-100 vh-50-l" id="{{ movie.data.id }}">
   <a class="db h-100 w-100 no-underline" href="{{ movie.data.imdb }}" target="blank" rel="noopener noreferrer">
     <div class="h-100 w-100 flex flex-column justify-end relative">
+
+      {%- if (movie.data.video) -%}
+        <video muted loop preload="auto" class="object-fit-cover absolute w-100 h-100" data-title="{{ movie.data.title }}">
+          <source src="{{ movie.data.video }}" type="video/mp4" />
+          <img class="absolute w-100 h-100 bg-black" src="{{ movie.data.image }}" loading="lazy" alt="{{ movie.data.title }}" />
+        </video>
+      {%- else -%}
+        <img class="absolute w-100 h-100 bg-black" src="{{ movie.data.image }}" loading="lazy" alt="{{ movie.data.title }}" />
+      {%- endif -%}
     
-      <img class="absolute w-100 h-100 bg-black" src="{{ movie.data.image }}" loading="lazy" alt="{{ movie.data.title }}" />
-    
-      <div class="h-100 w-100 h-75-m h-50-l pa4 pt0-l flex flex-column white ws-normal overflow-wrap-break-word">
+      <div class="absolute h-100 w-100 h-75-m h-50-l pa4 pt0-l flex flex-column white ws-normal overflow-wrap-break-word">
         <header class="h-45-l flex-shrink-0">
           <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3">{{ movie.data.title }}</h3>
           <h4 class="f3 fw4 i lh-title mt0">
