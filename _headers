@@ -1,0 +1,3 @@
+# cache things max half a year
+/*  
+  Cache-control: max-age 15768000
