@@ -12,7 +12,7 @@ permalink: "movies/a-{{ movie.data.id }}.html"
     <div class="h-100 w-100 flex flex-column justify-end relative">
 
       {%- if (movie.data.video) -%}
-        <video muted loop preload="auto" class="object-fit-cover absolute w-100 h-100" data-title="{{ movie.data.title }}">
+        <video playsinline muted loop preload="auto" class="object-fit-cover absolute w-100 h-100" data-title="{{ movie.data.title }}">
           <source src="{{ movie.data.video }}" type="video/mp4" />
           <img class="absolute w-100 h-100 bg-black" src="{{ movie.data.image }}" loading="lazy" alt="{{ movie.data.title }}" />
         </video>
